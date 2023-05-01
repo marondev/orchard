@@ -27,6 +27,7 @@
     font-weight: 300;
   }
 
+  // Global
   body {
     @apply bg-body text-primary ;
   }
@@ -35,11 +36,38 @@
     @apply uppercase;
   }
 
+  img {
+    @apply cursor-pointer;
+  }
+
   p {
    @apply leading-loose text-base;
   }
 
-  .card {
-    @apply w-auto;
+  // Hero Section
+  .hero-images img {
+    @apply w-full sm:w-auto mb-5 sm:mb-0;
+  }
+
+  // Latest Section
+  .latest-list-item {
+    @apply xl:flex-grow mt-16;
+    
+    img {
+      @apply xl:max-w-none w-full xl:w-auto mb-8 hover:border-b-4 hover:mb-7 border-b-highlight;
+      
+    }
+
+    .latest-list-title {
+      @apply mb:text-lg/8 font-regular mb-2 text-secondary;
+    }
+
+    .latest-list-content {
+      @apply line-clamp-3;
+    }
+
+    .latest-list-link {
+      @apply uppercase inline-block mt-5 font-regular text-secondary pb-2 border-b border-b-highlight;
+    }
   }
 }
