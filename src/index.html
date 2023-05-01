@@ -1,32 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Orchard - Frontend Test</title>
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
-    <link rel="stylesheet" type="text/css" href="./css/style.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Orchard - Frontend Test</title>
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="stylesheet" type="text/css" href="./css/style.css" />
 </head>
-<body class="bg-gray-50">
-    <main>
-        <main>
-            <section id="hero">
-                <div class="hero-images"></div>
-                <div class="hero-content">
-                    <h1>Answer your body's needs</h1>
-                    <p>The way ingredients are sourced affects the wat we nourish our bodies. Author Mark Schatzer believes our body naturally develops an appetite for the foods and nutrients it needs to be healthy, but that aritificial flavourings are getting the way. This can be reversed by focusing on high-quality ingredients and being mindful as your appetite guides you to consume according to your body's needs</p>
+<body>
+  <main class="md:container mx-auto py-44 md:px-[10.5em]">
     
-                    <h2>Be mindful</h2>
-                    <p>Sourcing local or organic food is a good way to start being more mindful about what you're cooking and eating</p>
-                </div>
-            </section>
-            <section id="latest"></section>
-        </main>
-    </main>
-    <script src="./js/scripts.js"></script>
+    <!-- HERO SECTION -->
+    <section id="hero" class="md:grid md:grid-cols-3 md:gap-6 mb-60">
+      <div class="hero-images md:grid md:grid-cols-2 md:col-span-2 md:gap-5">
+        <img src="./img/component-01/Image-01.jpg" class="md:col-span-1 md:row-span-2" alt="Father holding the boy" title="Father holding the boy">
+        <img src="./img/component-01/Image-02.jpg" alt="Vegetables" title="Vegetables">
+        <img src="./img/component-01/Image-03.jpg" alt="Food" title="Food">
+      </div>
+      <div class="hero-content col-span-1">
+        <h1 class="text-[1.6em]/loose pb-2 mb-8 border-b border-t-secondary">Answer your body's needs</h1>
+        <p class="text-lg/8">The way ingredients are sourced affects the wat we nourish our bodies. Author Mark Schatzer believes our body naturally develops an appetite for the foods and nutrients it needs to be healthy, but that aritificial flavourings are getting the way. This can be reversed by focusing on high-quality ingredients and being mindful as your appetite guides you to consume according to your body's needs</p>
+        
+        <h2 class="pt-8 pb-3 text-highlight font-regular">Be mindful</h2>
+        <p class="text-lg/8 font-regular text-secondary">Sourcing local or organic food is a good way to start being more mindful about what you're cooking and eating.</p>
+      </div>
+    </section>
+
+  </main>
+  <script src="./js/scripts.js"></script>
 </body>
 </html>
