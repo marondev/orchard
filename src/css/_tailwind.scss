@@ -2,3 +2,44 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  @font-face {
+    font-family: "Open Sans";
+    src: url('../fonts/OpenSans/OpenSans-Regular.ttf');
+    font-weight: 400;
+  }
+  
+  @font-face {
+    font-family: 'Open Sans Light';
+    src: url('../fonts/OpenSans/OpenSans-Light.ttf');
+    font-weight: 300;
+  }
+  
+  @font-face {
+    font-family: 'Open Sans Bold';
+    src: url('../fonts/OpenSans/OpenSans-Bold.ttf');
+    font-weight: 700;
+  }
+  
+  @font-face {
+    font-family: 'Open Sans Condensed Light';
+    src: url('../fonts/OpenSans_Condensed/OpenSans_Condensed-Light.ttf');
+    font-weight: 300;
+  }
+
+  body {
+    @apply bg-body text-primary ;
+  }
+
+  h1, h2 {
+    @apply uppercase;
+  }
+
+  p {
+   @apply leading-loose text-base;
+  }
+
+  .card {
+    @apply w-auto;
+  }
+}
