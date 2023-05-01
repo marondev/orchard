@@ -12,57 +12,72 @@
   <link rel="stylesheet" type="text/css" href="./css/style.css" />
 </head>
 <body>
-  <main class="md:container mx-auto py-44 md:px-[10.5em]">
-    
+  <main class="xl:max-w-screen-xl md:max-w-screen-md mx-auto px-5 md:px-10 py-20 md:py-44">
     <!-- HERO SECTION -->
-    <section id="hero" class="md:grid md:grid-cols-3 md:gap-6 mb-60">
-      <div class="hero-images md:grid md:grid-cols-2 md:col-span-2 md:gap-5">
-        <img src="./img/component-01/Image-01.jpg" class="md:col-span-1 md:row-span-2" alt="Father holding the boy" title="Father holding the boy">
-        <img src="./img/component-01/Image-02.jpg" alt="Vegetables" title="Vegetables">
-        <img src="./img/component-01/Image-03.jpg" alt="Food" title="Food">
+    <section id="hero" class="grid xl:grid-cols-3 md:gap-4 md:grid-cols-1 mb-20 md:mb-60">
+      <div class="hero-images grid sm:grid-cols-2 xl:col-span-2 sm:gap-5 order-2 sm:order-1">
+        <img src="./img/component-01/Image-01.jpg" data-image@2x="./img/component-01/Image-01@2x.jpg" class="img sm:col-span-1 sm:row-span-2" alt="Father holding the boy" title="Father holding the boy">
+        <img src="./img/component-01/Image-02.jpg" data-image@2x="./img/component-01/Image-02@2x.jpg" alt="Vegetables" title="Vegetables" class="img">
+        <img src="./img/component-01/Image-03.jpg" data-image@2x="./img/component-01/Image-03@2x.jpg" alt="Asparagus" title="Asparagus" class="img">
       </div>
-      <div class="hero-content col-span-1">
-        <h1 class="text-[1.6em]/loose pb-2 mb-8 border-b border-t-secondary">Answer your body's needs</h1>
-        <p class="text-lg/8">The way ingredients are sourced affects the wat we nourish our bodies. Author Mark Schatzer believes our body naturally develops an appetite for the foods and nutrients it needs to be healthy, but that aritificial flavourings are getting the way. This can be reversed by focusing on high-quality ingredients and being mindful as your appetite guides you to consume according to your body's needs</p>
+      <div class="hero-content col-span-1 order-1 sm:order-2 mb-10 sm:mb-0">
+        <h1 class="text-[1.6em]/loose pb-2 text-secondary mb-8 border-b border-b-secondary">Answer your body's needs</h1>
+        <p class="text-lg/8 text-[#ddd]">
+          The way ingredients are sourced affects the wat we nourish our bodies. Author Mark Schatzer believes our body naturally develops an appetite for the foods and nutrients it needs to be healthy, but that aritificial flavourings are getting the way. This can be reversed by focusing on high-quality ingredients and being mindful as your appetite guides you to consume according to your body's needs.
+        </p>
         
         <h2 class="pt-8 pb-3 text-highlight font-regular">Be mindful</h2>
-        <p class="text-lg/8 font-regular text-secondary">Sourcing local or organic food is a good way to start being more mindful about what you're cooking and eating.</p>
+        <p class="text-lg/8 font-regular text-secondary">
+          Sourcing local or organic food is a good way to start being more mindful about what you're cooking and eating.
+        </p>
       </div>
     </section>
-
+    
     <!-- LATEST SECTION -->
-    <section id="latest">
-      <h2 class="text-center text-secondary text-[2.7em] mb-16">All the latest from AEG</h2>
-      <div class="latest-list flex justify-between gap-7 flex-auto">
+    <section id="latest" class="max-w-6xl">
+      <h2 class="text-center text-secondary text-[2.7em]">All the latest from AEG</h2>
+      <div class="latest-list xl:flex xl:justify-between xl:gap-7">
         <div class="latest-list-item card">
-          <img src="./img/component-02/Image-01.jpg" alt="">
+          <img src="./img/component-02/Image-01.jpg" data-image@2x="./img/component-02/Image-01@2x.jpg" alt="" class="img">
           <h3 class="latest-list-title">Summer Lunch Menu By Mark Best</h3>
           <p class="latest-list-content">
             AEG ambassador Mark Best's summer eats are guaranteed to help you make the most of the warmer weather and entertaining at home.
           </p>
-          <a class="latest-list-link uppercase" href="/"> Read More</a>
+          <a class="latest-list-link uppercase" href="#" onclick="gotoLink()"> Read More</a>
         </div>
-
+        
         <div class="latest-list-item card">
-          <img src="./img/component-02/Image-02.jpg" alt="">
+          <img src="./img/component-02/Image-02.jpg" data-image@2x="./img/component-02/Image-02@2x.jpg" alt="" class="img">
           <h3 class="latest-list-title">A Traditional Christmas Eve, Mark Best Style</h3>
           <p class="latest-list-content">
             One of Australia's best chefs and AEG ambassador, Mark Best, shares his favourite Christmas Eve menu which is sure to impress your guests.
           </p>
-          <a class="latest-list-link uppercase" href="/"> Read More</a>
+          <a class="latest-list-link uppercase" href="#" onclick="gotoLink()"> Read More</a>
         </div>
-
+        
         <div class="latest-list-item card">
-          <img src="./img/component-02/Image-03.jpg" alt="">
+          <img src="./img/component-02/Image-03.jpg" data-image@2x="./img/component-02/Image-03@2x.jpg" alt="" class="img">
           <h3 class="latest-list-title">Taking Taste Further</h3>
           <p class="latest-list-content">
-            This exclusive cookbook gives you all the know-how you needl We've designed it to make sure you get the most of our products - and the best out of your food.
+            This exclusive cookbook gives you all the know-how you need. We've designed it to make sure you get the most out of our products - and the best out of your food.
           </p>
-          <a class="latest-list-link uppercase" href="/"> Read More</a>
+          <a class="latest-list-link" href="#" onclick="gotoLink()"> Read More</a>
         </div>
       </div>
     </section>
   </main>
-  <script src="./js/scripts.js"></script>
+  
+  <!-- Modal overlay -->
+  
+  <div id="modal" class="hidden fixed top-0 left-0 z-80 w-screen h-screen bg-body/90 justify-center items-center" onclick="closeModal()">
+  
+    <!-- The close button -->
+    <a class="fixed z-90 top-6 right-8 text-white text-5xl font-bold" href="javascript:void(0)" onclick="closeModal()">&times;<a>
+    
+    <!-- A big image will be displayed here -->
+    <img id="modal-image" class="max-w-[800px] max-h-[600px] object-cover" />
+  </div>
+
+<script src="./js/scripts.js"></script>
 </body>
 </html>
