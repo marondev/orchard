@@ -1,4 +1,3 @@
-const options = require("./config"); //options from config.js
 const defaultTheme = require('tailwindcss/defaultTheme');
 
 /** @type {import('tailwindcss').Config} */
